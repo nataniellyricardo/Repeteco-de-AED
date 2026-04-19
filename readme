@@ -1,0 +1,31 @@
+###Natãnielly Ricardo Amorim 
+
+860. Mudança de Limonada
+
+Em uma barraca de limonada, cada limonada custa $5. Os clientes estão em fila para comprar e pedem uma de cada vez (na ordem especificada pelas 
+notas). Cada cliente comprará apenas uma limonada e pagará com uma nota de $5, $10ou $20. Você deve dar o troco correto a cada cliente para que o 
+valor total da transação seja de $5.
+
+Note que você não tem nenhum troco em mãos inicialmente. Dado um array de inteiros billsonde bills[i]é o valor da conta que o cliente paga, 
+retorne se você puder fornecer a cada cliente o troco correto, ou caso contrário. ith true false
+
+ 
+
+Exemplo 1:
+
+Entrada: contas = [5,5,5,10,20]
+ Saída: verdadeiro
+ Explicação: 
+Dos três primeiros clientes, recolhemos três notas de 5 dólares em ordem.
+A partir do quarto cliente, cobramos uma nota de 10 dólares e devolvemos 5 dólares.
+A partir do quinto cliente, damos uma nota de 10 dólares e uma nota de 5 dólares.
+Como todos os clientes receberam o troco correto, registramos "verdadeiro".
+Exemplo 2:
+
+Entrada: contas = [5,5,10,10,20]
+ Saída: falso
+ Explicação: 
+Dos dois primeiros clientes da fila, cobramos duas notas de 5 dólares.
+Para os próximos dois clientes na ordem, cobramos uma nota de 10 dólares e devolvemos uma nota de 5 dólares.
+Para o último cliente, não podemos devolver o troco de 15 dólares porque só temos duas notas de 10 dólares.
+Como nem todos os clientes receberam o troco correto, a resposta é falsa.
